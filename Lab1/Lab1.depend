@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1519581519 source:c:\users\colvic\desktop\ppe\lab1\main.cpp
+	<tchar.h>
+	<windows.h>
+
