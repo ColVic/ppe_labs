@@ -2,7 +2,7 @@
 
 LRESULT CALLBACK OnWmCtlcoloredit(HWND hwnd, WPARAM wParam, LPARAM lParam)
 {
-	if (IDC_TEXTAREA2 == GetDlgCtrlID((HWND)lParam))
+	if (SECOND_TEXTAREA == GetDlgCtrlID((HWND)lParam))
 	{
 		HDC hdcStatic = (HDC)wParam;
 		SetBkColor(hdcStatic, RGB(255, 200, 200));

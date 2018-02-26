@@ -11,27 +11,27 @@ void OnWmCreate(HWND hwnd, WPARAM wParam, LPARAM lParam)
     strcpy(logFont.lfFaceName, "Broadway");
     hfont = CreateFontIndirect(&logFont);
 
-    button1 = CreateWindowEx(
+    clear_button = CreateWindowEx(
         NULL, "BUTTON", "Clear",
         WS_VISIBLE | WS_CHILD | BS_DEFPUSHBUTTON,
         0, 0, 0, 0,
-        hwnd, (HMENU)IDC_BUTTON_1, NULL, NULL);
+        hwnd, (HMENU)CLEAR_BUTTON, NULL, NULL);
 
-    button2 = CreateWindowEx(
+    copy_button = CreateWindowEx(
         NULL, "BUTTON", "ReplacedName",
         WS_VISIBLE | WS_CHILD | BS_DEFPUSHBUTTON | BS_OWNERDRAW,
         0, 0, 0, 0,
-        hwnd, (HMENU)IDC_BUTTON_2, NULL, NULL);
+        hwnd, (HMENU)COPY_BUTTON, NULL, NULL);
 
     text_box1 = CreateWindowEx(
         WS_EX_CLIENTEDGE, "EDIT", "",
         WS_VISIBLE | WS_CHILD | ES_MULTILINE | ES_AUTOVSCROLL | WS_VSCROLL,
         0, 0, 0, 0,
-        hwnd, (HMENU)IDC_TEXTAREA1, NULL, NULL);
+        hwnd, (HMENU)FIRST_TEXTAREA, NULL, NULL);
 
     text_box2 = CreateWindowEx(
         WS_EX_CLIENTEDGE, "EDIT", "",
         WS_VISIBLE | WS_CHILD | ES_MULTILINE | ES_AUTOVSCROLL | WS_VSCROLL,
         0, 0, 0, 0,
-        hwnd, (HMENU)IDC_TEXTAREA2, NULL, NULL);
+        hwnd, (HMENU)SECOND_TEXTAREA, NULL, NULL);
 }

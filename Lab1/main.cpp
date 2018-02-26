@@ -2,7 +2,7 @@
 
 LRESULT CALLBACK WindowProcedure (HWND, UINT, WPARAM, LPARAM);
 
-HWND button1, button2, text_box1, text_box2;
+HWND clear_button, copy_button, text_box1, text_box2;
 PAINTSTRUCT ps;
 RECT rect;
 LRESULT textSize;

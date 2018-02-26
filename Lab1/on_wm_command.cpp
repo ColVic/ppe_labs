@@ -4,11 +4,11 @@ void OnWmCommand(HWND hwnd, WPARAM wParam, LPARAM lParam)
 {
 	switch (LOWORD(wParam))
 	{
-	case IDC_BUTTON_1:
+	case CLEAR_BUTTON:
 		SendMessage(text_box1, WM_SETTEXT, NULL, NULL);
 		break;
 
-	case IDC_BUTTON_2:
+	case COPY_BUTTON:
 		textSize = SendMessage(text_box1, WM_GETTEXT, 100, (LPARAM)box2); // text size
 		box2[textSize] = _T('\0');										  // initialization with null character
 		SendMessage(text_box2, EM_REPLACESEL, 0, (LPARAM)box2);			  // add inputed text to window

@@ -5,12 +5,12 @@
 #include <stdlib.h>
 #include <tchar.h>
 
-#define IDC_BUTTON_1 1
-#define IDC_BUTTON_2 2
-#define IDC_TEXTAREA1 3
-#define IDC_TEXTAREA2 4
+#define CLEAR_BUTTON 1
+#define COPY_BUTTON 2
+#define FIRST_TEXTAREA 3
+#define SECOND_TEXTAREA 4
 
-extern HWND button1, button2, text_box1, text_box2;
+extern HWND clear_button, copy_button, text_box1, text_box2;
 extern PAINTSTRUCT ps;
 extern RECT rect;
 extern LRESULT textSize;

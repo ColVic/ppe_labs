@@ -7,13 +7,13 @@ void OnWmSize(HWND hwnd, WPARAM wParam, LPARAM lParam)
 
     // give position to elements
     MoveWindow(
-        button1,
+        clear_button,
         cxCoord - 150, 40,
         100, 40,
         TRUE);
 
     MoveWindow(
-        button2,
+        copy_button,
         cxCoord - 150, cyCoord / 2 + 40,
         100, 40,
         TRUE);

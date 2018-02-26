@@ -243,4 +243,4 @@ tmptest.dll
 playground/
 *.depend
 *.layout
-*.cpb
+*.cbp
