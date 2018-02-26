@@ -6,9 +6,8 @@ void OnWmDrawitem(HWND hwnd, WPARAM wParam, LPARAM lParam)
 	{
 		LPDRAWITEMSTRUCT lpdis = (DRAWITEMSTRUCT *)lParam;
 		SIZE size;
-		char copy_button[11];
-		strcpy(copy_button, "Copy text");
-		GetTextExtentPoint32(lpdis->hDC, copy_button, strlen(copy_button), &size);
+		char * copy_button_text = "Copy text";
+		GetTextExtentPoint32(lpdis->hDC, copy_button_text, strlen(copy_button_text), &size);
 		SetBkColor(lpdis->hDC, RGB(255, 0, 102));
 		SetTextColor(lpdis->hDC, RGB(0, 0, 255));
 
@@ -18,8 +17,8 @@ void OnWmDrawitem(HWND hwnd, WPARAM wParam, LPARAM lParam)
 			((lpdis->rcItem.bottom - lpdis->rcItem.top) - size.cy) / 2,
 			ETO_OPAQUE | ETO_CLIPPED,
 			&lpdis->rcItem,
-			copy_button,
-			strlen(copy_button),
+			copy_button_text,
+			strlen(copy_button_text),
 			NULL);
 
 		DrawEdge(
