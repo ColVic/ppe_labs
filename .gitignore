@@ -242,3 +242,5 @@ tmptest.dll
 .vscode/
 playground/
 *.depend
+*.layout
+*.cpb
