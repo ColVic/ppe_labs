@@ -94,6 +94,12 @@ LRESULT CALLBACK WindowProcedure (HWND hwnd, UINT message, WPARAM wParam, LPARAM
         case WM_CTLCOLOREDIT:
             return OnWmCtlcoloredit(hwnd, wParam, lParam);
 
+        case WM_CLOSE:
+            if (MessageBox(hwnd, "Do you really want to quit?", "Victor's first lab", MB_OKCANCEL) == IDOK)
+                DestroyWindow(hwnd);
+
+            return 0;
+
         case WM_DESTROY:
             PostQuitMessage(0);
             break;
