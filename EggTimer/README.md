@@ -20,12 +20,12 @@ The **NSController** family of classes provide predefined behavior for the contr
 ---
 ## Xcode
 
-|![Screen Shot 2018-06-08 at 17.22.41.png](quiver-image-url/851BF937C4F361517102E6A449D1A9D7.png =1085x682)|
+|![Screen Shot 2018-06-08 at 17.22.41.png](https://preview.ibb.co/cqRkno/fig1.png)|
 |:-:|
 |**Fig. 1**|
 
 Xcode creates the basic template for Cocoa apps. On run, we can see a simple blank window:
-|![Screen Shot 2018-06-08 at 17.24.43.png](quiver-image-url/DC87291DE325B2FC1E53FF1793CD6A8E.png =483x295)|
+|![Screen Shot 2018-06-08 at 17.24.43.png](https://preview.ibb.co/feQd7o/fig2.png)|
 |:-:|
 |**Fig. 2**|
 
@@ -95,14 +95,14 @@ I decided to create an EggTimer application for macOS in order to understand the
 
 The UI is added from `Main.storyboard` interface from project navigator tab:
 
-|![Screen Shot 2018-06-10 at 10.23.32.png](quiver-image-url/CD425593431AAC16B1F6256C77C5E656.png =1495x792)|
+|![Screen Shot 2018-06-10 at 10.23.32.png](https://preview.ibb.co/kxKhYT/fig3.png)|
 |:-:|
 |**Fig. 3**|
 
 Visual elements are linked from `Main.storyboard` to code using `@IBOutlet`. This is short for Interface Builder Outlet and is how you tell the storyboard editor that these object names are available for linking to a visual object.
 For the button, the code needs to know when a user clicks the button. This calls for an `@IBAction` instead of an `@IBOutlet`.
 
-|![Screen Shot 2018-06-10 at 10.27.57.png](quiver-image-url/2A3C68FB09D857443ABDD7134CCC3CD8.png =534x904)|
+|![Screen Shot 2018-06-10 at 10.27.57.png](https://preview.ibb.co/gVk0L8/fig4.png)|
 |:-:|
 |**Fig. 4**|
 
@@ -110,7 +110,7 @@ In Fig.4 is shown a part of code from my `ViewController.swift` file where are d
 
 Because I one more window called **Preferences**, there is also a controller attacked to it.
 
-|![Screen Shot 2018-06-10 at 10.38.01.png](quiver-image-url/3B648DB8DB9B3369B05DB9D2BD6F341C.png =565x812)|
+|![Screen Shot 2018-06-10 at 10.38.01.png](https://preview.ibb.co/b17Qno/fig5.png)|
 |:-:|
 |**Fig. 5**|
 
@@ -128,7 +128,7 @@ In Cocoa API, the object which is repsonsible for event-handling is called **Del
 
 The programming mechanism of delegation gives objects a chance to coordinate their appearance and state with changes occurring elsewhere in a program, changes usually brought about by user actions. More importantly, delegation makes it possible for one object to alter the behavior of another object without the need to inherit from it. The delegate is almost always one of programmer's custom objects, and by definition it incorporates application-specific logic that the generic and delegating object cannot possibly know itself.
 
-|![Screen Shot 2018-06-10 at 10.48.50.png](quiver-image-url/811E50898D8AEE4C2D6A263651BBAE2B.png =633x579)|
+|![Screen Shot 2018-06-10 at 10.48.50.png](https://preview.ibb.co/mTf0L8/fig6.png)|
 |:-:|
 |**Fig. 6**|
 
@@ -137,7 +137,7 @@ In Fig.6 is represented my `AppDelegate.swift` file which is repsonsible for set
 ## Models
 ---
 
-|![Screen Shot 2018-06-10 at 11.36.19.png](quiver-image-url/88C6C1B9BF2092E937B19AEF8A10F6E0.png =707x850)|
+|![Screen Shot 2018-06-10 at 11.36.19.png](https://preview.ibb.co/djkpDT/fig7.png)|
 |:-:|
 |**Fig. 7**|
 
@@ -149,7 +149,7 @@ To communicate back to the ViewController, EggTimer uses a delegate protocol. Wh
 
 **Preferences** model is going to be slighly different. Preferences are going be stored using UserDefaults which is a key-value way of storing small pieces of data in the Preferences folder in the app's Container.
 
-|![Screen Shot 2018-06-10 at 11.33.31.png](quiver-image-url/08880162057EF12D1C4BA162070DC34F.png =702x497)|
+|![Screen Shot 2018-06-10 at 11.33.31.png](https://preview.ibb.co/i2euf8/fig8.png)|
 |:-:|
 |**Fig. 8**|
 
